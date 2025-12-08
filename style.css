@@ -1,0 +1,40 @@
+
+body {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "nav section section"
+    "footer footer footer";
+  grid-template-rows: 80px 1fr 50px;
+  grid-template-columns: 20% 1fr 18%;
+  grid-gap: 5px;
+  height: 100vh;
+  margin: 10px;
+}
+
+header {
+  background: #707070;
+  grid-area: header;
+  text-align: center;
+  padding: 5px;
+}
+
+nav {
+  background: #C9BFBF;
+  grid-area: nav;
+  padding: 5px;
+}
+
+section {
+  background: #ABABAB;
+  grid-area: section;
+  padding: 5px;
+}
+
+footer {
+  background: #707070;
+  grid-area: footer;
+  font-size: small;
+  text-align: center;
+  padding: 5px;
+}
