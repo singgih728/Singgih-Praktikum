@@ -1,0 +1,46 @@
+<html>
+<head>
+    <title>Kalkulator Sederhana</title>
+</head>
+<script language="JavaScript">
+    function tambah() {
+        var a = parseFloat(document.kalk.bil1.value);
+        var b = parseFloat(document.kalk.bil2.value);
+        document.kalk.hasil.value = a + b;
+    }
+    function kurang() {
+        var a = parseFloat(document.kalk.bil1.value);
+        var b = parseFloat(document.kalk.bil2.value);
+        document.kalk.hasil.value = a - b;
+    }
+    function kali() {
+        var a = parseFloat(document.kalk.bil1.value);
+        var b = parseFloat(document.kalk.bil2.value);
+        document.kalk.hasil.value = a * b;
+    }
+    function bagi() {
+        var a = parseFloat(document.kalk.bil1.value);
+        var b = parseFloat(document.kalk.bil2.value);
+        document.kalk.hasil.value = a / b;
+    }
+</script>
+<body>
+    <h3>Kalkulator Sederhana</h3>
+    <form name="kalk">
+        Bil 1 : <input type="text" name="bil1" size="10"><br><br>
+        Bil 2 : <input type="text" name="bil2" size="10"><br><br>
+        Hasil : <input type="text" name="hasil" size="10"><br><br>
+
+        <input type="button" value=" + " onclick="tambah()">
+        <input type="button" value=" - " onclick="kurang()">
+        <input type="button" value=" x " onclick="kali()">
+        <input type="button" value=" / " onclick="bagi()">
+    </form>
+    <br><br>
+    <script language="JavaScript">
+    <!--
+        document.write("Dimodifikasi terakhir pada " + document.lastModified);
+    //-->
+    </script>
+</body>
+</html>
