@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Mengkonversi Nilai</title>
+    </head>
+    <script language="JavaScript">
+        function cekNilai () {
+            var nilai = prompt("Masukkan Nilai (0-100) :", 0);
+            var huruf = "";
+            if (nilai >=0 && nilai <=40)
+            huruf = "E";
+            else if (nilai >=41 && nilai <=55)
+            huruf = "D";
+            else if (nilai >=56 && nilai <=60)
+            huruf = "C";
+            else if (nilai >=61 && nilai <=65)
+            huruf = "BC";
+            else if (nilai >=66 && nilai <=70)
+            huruf = "B";
+            else if (nilai >=71 && nilai <=80)
+            huruf = "AB";
+            else if (nilai >=81 && nilai <=100)
+            huruf = "A";
+            else 
+            huruf = "Nilai tidak valid";
+
+            document.write("Nilai Anda: " + nilai);
+            document.write("<br>Nilai Huruf: " + huruf + "</b>");
+        }
+    </script>
+    <body>
+        <input type="button" value="CEK NILAI" onclick="cekNilai()">
+    </body>
+</html>
