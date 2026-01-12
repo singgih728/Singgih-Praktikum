@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulir Perpustakaan Kota</title>
+</head>
+<body>
+
+    <h2>Formulir Perpustakaan Kota</h2>
+
+    <form action="formulir_perpuskotamadiun.html" method="get">
+    Nama Lengkap:       
+    <input type="text" name="nama" value="" />
+    <br><br />
+    Password:
+    <input type="password" name="password" />
+    <br><br />
+
+    Jenis Kelamin: <br>
+    <input type="radio" name="jenis_kelamin" value="laki-laki" />
+    Laki - Laki
+    <input type="radio" name="jenis_kelamin" value="perempuan" />
+    Perempuan
+    <br><br />
+
+    Email: <br>
+    <input type="email" name="email" />
+    <br><br />
+
+    No. Telepon: <br>
+    <input type="text" name="telp" />
+    <br><br />
+
+    Alamat: <br>
+    <textarea name="alamat" rows="5" cols="45" ></textarea>
+    <br><br />
+
+    Mengetahui Perpustakaan Dari: <br>
+    <input type="radio" name="rekom_web" /> Website<br>
+    <input type="radio" name="rekom_sekolah" /> Sekolah<br> 
+    <input type="radio" name="rekom_teman" /> Teman<br>
+    <input type="radio" name="rekom_medsos" /> Media Sosial<br>
+    <input type="radio" name="rekom_lain" /> Lainnya
+    <br><br />
+
+    Pekerjaan: <br>
+    <select name="pekerjaan" >
+        <option value="">--Pilih Salah Satu--</option>
+        <option value="TK"> TK</option>
+        <option value="SD/MI"> SD/MI</option>
+        <option value="SMP/MTS"> SMP/MTS</option>
+        <option value="SMA/MAN"> SMA/MAN</option>
+        <option value="Mahasiswa"> Mahasiswa</option>
+        <option value="Karyawan"> Karyawan</option>
+        <option value="Lainnya"> Lainnya</option>
+    </select>
+    <br><br />
+
+    Minat Bacaan: <br>
+    <input type="checkbox" name="minat_fiksi" /> Fiksi<br>
+    <input type="checkbox" name="minat_nonfiksi" /> Non-Fiksi<br>
+    <input type="checkbox" name="minat_sains" /> Sains<br>
+    <input type="checkbox" name="minat_sejarah" /> Sejarah<br>
+    <input type="checkbox" name="minat_majalah" /> Majalah<br>
+    <input type="checkbox" name="minat_lain" /> Lainnya
+    <br><br />
+
+    Kritik dan Saran: <br>
+    <textarea name="kritik_saran" rows="5" cols="45">
+    </textarea>
+    <br />
+
+    <input type="submit" value="Kirim Formulir" >
+    </form>
+</body>
+</html>

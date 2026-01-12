@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulir Klinik Sehat</title>
+</head>
+<body>
+
+    <h2>Formulir Pemeriksaan Kesehatan</h2>
+
+    <form action="formulir_kliniksehat.html" method="get">
+    Nama Lengkap:       
+    <input type="text" name="nama" value="" />
+    <br><br />
+    Password:
+    <input type="password" name="password" />
+    <br><br />
+
+    Jenis Kelamin: <br>
+    <input type="radio" name="jenis_kelamin" value="laki-laki" />
+    Laki - Laki
+    <input type="radio" name="jenis_kelamin" value="perempuan" />
+    Perempuan
+    <br><br />
+
+    Usia:
+    <input type="text" name="usia" />
+    <br><br />
+
+    No. Telepon: <br>
+    <input type="text" name="telp" />
+    <br><br />
+
+    Alamat: <br>
+    <textarea name="alamat" rows="5" cols="45" ></textarea>
+    <br><br />
+
+    Kondisi Fisik: <br>
+    <input type="text" name="tinggi" placeholder="cm" /> Tinggi Badan<br>
+    <input type="text" name="berat" placeholder="kg" /> Berat Badan<br>
+    <input type="text" name="tekanan" placeholder="120/80" /> Tekanan Darah
+    <br><br />
+
+    Fungsi Indera: <br>
+    Fungsi Penghlihatan: <br> 
+    <input type="radio" name="penglihatan" /> Normal
+    <input type="radio" name="penglihatan" /> Gangguan<br>
+    Fungsi Pendengaran: <br>
+    <input type="radio" name="pendengaran" /> Normal
+    <input type="radio" name="pendengaran" /> Gangguan<br>
+    Fungsi Bicara: <br>
+    <input type="radio" name="bicara" /> Normal
+    <input type="radio" name="bicara" /> Gangguan<br>
+    Cacat Fisik: <br>
+    <input type="radio" name="cacat" /> Normal
+    <input type="radio" name="cacat" /> Gangguan
+    <br><br />
+
+    Buta Warna: <br>
+    <input type="checkbox" name="buta_normal" /> Normal<br>
+    <input type="checkbox" name="buta_merah" /> Parsial Merah<br>
+    <input type="checkbox" name="buta_hijau" /> Parsial Hijau<br>
+    <input type="checkbox" name="buta_total_merah" /> Total Merah<br>
+    <input type="checkbox" name="buta_total_hijau" /> Total Hijau<br>
+    <input type="checkbox" name="buta_total" /> Total
+    <br><br />
+    
+    Riwayat Penyakit: <br>
+    <select name="riwayat">
+        <option value="">-- Pilih Riwayat --</option>
+        <option value="tidak_ada">Tidak Ada</option>
+        <option value="asma">Asma</option>
+        <option value="diabetes">Diabetes</option>
+        <option value="jantung">Penyakit Jantung</option>
+        <option value="lainnya">Lainnya</option>
+    </select>
+    <br><br>    
+
+    <input type="submit" value="Kirim Formulir" >
+    </form>
+</body>
+</html>
